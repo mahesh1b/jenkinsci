@@ -1,3 +1,3 @@
 image:
   repository: 194722446030.dkr.ecr.us-east-2.amazonaws.com/gep-nonprod-cms
-  tag: nginx-v1
+  tag: nginx-1.25.5
