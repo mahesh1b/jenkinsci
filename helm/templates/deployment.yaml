@@ -3,7 +3,13 @@ kind: Deployment
 metadata:
   name: nginx-deployment
 spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}  # Ensures selector matches template labels
   template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
     spec:
       containers:
       - name: nginx
